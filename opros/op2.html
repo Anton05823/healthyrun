@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+  <title>healthyrun</title>
+</head>
+<body>
+  <header><img src="Navbar.jpg" alt=""></header>
+  <form>
+    <h2>Как давно вы тренируетесь и какая у вас цель ?</h2>
+    <hr>
+        <form>
+          <div class="wrap">
+            <div class="form-group">
+              <label for="username">Опыт в беге</label>
+              <select class = "form-op" id="pol" name="pol">
+                  <option value="M">Начинающий</option>
+                  <option value="W">Любитель</option>
+                  <option value="P">Профессионал</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="username">Цель</label>
+              <select class = "form-op" id="pol" name="pol">
+                  <option value="M">Здоровье</option>
+                  <option value="W">Поддержание формы</option>
+                  <option value="W">Сбросить вес</option>
+                  <option value="W">Участвовать в соревнованиях</option>
+              </select>
+            </div>
+          </div>
+    <h2>В какие дни вам удобно тренироваться ?</h2>
+    <hr>
+      <dev class="wrap">
+        <div class="form-group">
+          <table>
+              <tr>
+                <th>ПН</th>
+                <th>ВТ</th>
+                <th>СР</th>
+                <th>ЧТ</th>
+                <th>ПТ</th>
+                <th>СБ</th>
+                <th>ВС</th>
+              </tr>
+              <tr>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+                <td><img src="c2.png" onclick="imgchange(this,'c2.png','c1.png')"></td>
+              </tr> 
+          </table>
+        </div>
+      </dev>
+      <div class="form-group">
+          <a class="btn" href="op3.html">Далее</a>
+      </div>
+  </form>
+  <footer><img src="Footer.jpg" alt=""></footer>
+</body>
+<script>
+  var x=false
+  function imgchange(obj,imgX,imgY) {
+   if  (x){
+   obj.src=imgX
+   } else {
+   obj.src=imgY
+   }
+  x=!x
+ }
+
+</script>
+<style>
+  button{
+  outline: none;
+	border: none; 
+  user-select: none;
+	appearance: none; 
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    color: #232536;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  img{
+    width: 100%;
+  }
+  form{
+    background: #F4F0F8;
+    border-radius: 24px;
+    margin: 100px 220px;
+    padding-bottom: 56px;
+  }
+
+  label{
+    color: #232536;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  h2{
+    font-family: "Sen", sans-serif;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 56px;
+    padding-top: 56px;
+  }
+  hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 2px;
+    width: 92%;
+    background: #6D6E76;
+}
+input[type="text"], input[type="password"], input[type="email"], select{
+  font-family: inherit;
+  font-size: inherit; 
+  line-height: inherit; 
+}
+select{
+    width: 390px;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: px;
+}
+/* стили для input */
+.form-group{
+  margin-left: 56px;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 380px;
+  height: 100px;
+
+}
+
+.form-op{
+  height: 50px;
+  width: 380px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+ 
+.btn {
+  margin-top: 16px;
+  margin-left: 700px;
+  width: 140px;
+  text-align: center;
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 10px 30px;
+	outline: none;
+	border: none;  
+	border-radius: 6px;
+	height: 52px;
+	line-height: 32px;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #232536;
+	background-color: #FFD050;
+	cursor: pointer;
+	user-select: none;
+	appearance: none; 
+}
+.btn:hover {
+  border: 1px solid #232536;
+}
+.btn:active {
+	border: 1px solid #232536;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px #232536;
+}
+.btn-link{
+  font-family: "Sen", sans-serif;
+  text-decoration: underline;
+}
+.btn-linkL:hover{
+  font-weight: 700;
+}
+.btn-linkL:active {
+  font-weight: 700;
+}
+.btn-linkL:focus-visible {
+  font-weight: 700;
+}
+</style>
+</html>

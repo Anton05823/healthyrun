@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+  <title>healthyrun</title>
+</head>
+<body>
+  <header><img src="Navbar.jpg" alt=""></header>
+  <form>
+    <h2>Регистрация</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" name="firstName" class="form-control" placeholder="Фамилия"/>
+                <input type="text" name="lastName" class="form-control" placeholder="Имя"/>
+                <input type="text" name="Email" class="form-control" placeholder="Почта"/>
+                <input type="password" name="password" class="form-control" placeholder="Пароль"/>
+            </div>
+            <div class="form-group">
+               <a class="btn" href="op1.html">Зарегистрироваться</a>
+              <br>
+                <span> <a href="log.html" class="btn-link">Назад</a> </span>
+            </div>
+        </form>
+  </form>
+  <footer><img src="Footer.jpg" alt=""></footer>
+</body>
+<style>
+.wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+  body{
+    margin: 0;
+    padding: 0;
+    color: #232536;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  img{
+    width: 100%;
+  }
+  form{
+    background: #F4F0F8;
+    border-radius: 24px;
+    margin: 100px 220px;
+    padding-bottom: 56px;
+  }
+  h2{
+    font-family: "Sen", sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 56px;
+    padding-top: 56px;
+    margin-bottom: 56px;
+  }
+  hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 2px;
+    width: 92%;
+    background: #6D6E76;
+}
+input[type="text"], input[type="password"] {
+  font-family: inherit;
+  font-size: inherit; 
+  line-height: inherit; 
+  margin-left: 86px;
+}
+/* стили для input */
+.form-control {
+  margin-top: 16px;
+  width: 780px;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+ 
+.btn {
+  margin-top: 16px;
+  margin-left: 86px;
+  width: 804px;
+  text-align: center;
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 10px 30px;
+	outline: none;
+	border: none;  
+	border-radius: 6px;
+	height: 52px;
+	line-height: 32px;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #232536;
+	background-color: #FFD050;
+	cursor: pointer;
+	user-select: none;
+	appearance: none; 
+}
+.btn:hover {
+  border: 1px solid #232536;
+}
+.btn:active {
+	border: 1px solid #232536;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px #232536;
+}
+
+span{
+  display:  block;
+  text-align: center;
+  margin-top: 16px;
+  cursor: pointer;
+  font-weight: 400;
+
+}
+
+.btn-link{
+  font-family: "Sen", sans-serif;
+  text-decoration: underline;
+}
+.btn-linkL:hover{
+  font-weight: 700;
+}
+.btn-linkL:active {
+  font-weight: 700;
+}
+.btn-linkL:focus-visible {
+  font-weight: 700;
+}
+</style>
+</html>
